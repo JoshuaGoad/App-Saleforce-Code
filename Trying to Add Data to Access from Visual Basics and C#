@@ -1,22 +1,6 @@
 Public Class Form2
     Private Access As New dbcontrol
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles checkBox.CheckedChanged
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles noteLabel.Click
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles numberLabel.Click
-
-    End Sub
-
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles noteTxt.TextChanged
-
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles clearCmd.Click
         nameTxt.Clear()
         numberTxt.Clear()
@@ -29,9 +13,6 @@ Public Class Form2
         Access.ExecQuery("INSERT INTO PartLists (PartName) 
                             VALUES ('@PartName')")
 
-
-    End Sub
-    Private Sub nameTxt_TextChanged(sender As Object, e As EventArgs) Handles nameTxt.TextChanged
 
     End Sub
 
