@@ -26,8 +26,8 @@ Public Class Form2
     Private Sub AddPart(PartName As String)
         'Functions for adding data
         Access.AddParam("@PartName", "%" & PartName & "%")
-        Access.ExecQuery("INSERT INTO PartLists
-                           PartName VALUES @PartName")
+        Access.ExecQuery("INSERT INTO PartLists (PartName) 
+                            VALUES ('@PartName')")
 
 
     End Sub
